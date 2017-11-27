@@ -1,7 +1,8 @@
 lazy val sharedSettings = Seq(
-  version := "0.1.0",
-  organization := "co.technius",
-  scalaVersion := "2.11.8",
+  version := "0.1.1",
+  organization := "com.tgf.pizza",
+  scalaVersion := "2.12.4",
+  crossScalaVersions := Seq("2.12.4", "2.11.11"),
   scalacOptions ++= Seq(
     "-feature",
     "-deprecation",
@@ -19,8 +20,7 @@ lazy val core =
     .settings(
       name := """scalajs-mithril""",
       libraryDependencies ++= Seq(
-        "org.scala-js" %%% "scalajs-dom" % "0.9.0",
-        "org.scalatest" %% "scalatest" % "2.2.4" % "test"
+        "org.scala-js" %%% "scalajs-dom" % "0.9.3"
       )
     )
     .enablePlugins(ScalaJSPlugin)
@@ -31,7 +31,7 @@ lazy val examples =
     .settings(
       name := """scalajs-mithril-examples""",
       libraryDependencies ++= Seq(
-        "org.scala-js" %%% "scalajs-dom" % "0.9.0"
+        "org.scala-js" %%% "scalajs-dom" % "0.9.3"
       ),
       jsDependencies += "org.webjars" % "mithril" % "0.2.5" / "mithril.js"
     )

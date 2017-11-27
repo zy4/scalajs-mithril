@@ -1,9 +1,8 @@
-package co.technius.scalajs.mithril
+package com.tgf.pizza.scalajs.mithril
 
 import org.scalajs.dom.XMLHttpRequest
-import scala.concurrent.Future
 import scala.scalajs.js
-import scala.scalajs.js.annotation.{ JSExportAll, ScalaJSDefined }
+import scala.scalajs.js.annotation.ScalaJSDefined
 
 @js.native
 trait Deferred[T] extends js.Object {

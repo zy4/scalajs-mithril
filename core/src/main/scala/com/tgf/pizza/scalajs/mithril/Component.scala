@@ -1,9 +1,8 @@
-package co.technius.scalajs.mithril
+package com.tgf.pizza.scalajs.mithril
 
 import scala.scalajs.js
-import scala.scalajs.js.|
 import scala.scalajs.js.annotation._
-import scala.annotation.meta.field
+
 
 @js.native
 trait MithrilComponent extends js.Object {

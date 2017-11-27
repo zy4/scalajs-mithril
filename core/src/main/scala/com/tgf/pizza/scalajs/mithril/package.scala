@@ -1,4 +1,4 @@
-package co.technius.scalajs
+package com.tgf.pizza.scalajs
 
 import scala.language.implicitConversions
 import scala.scalajs.js

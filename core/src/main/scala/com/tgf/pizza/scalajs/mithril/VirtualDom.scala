@@ -1,4 +1,4 @@
-package co.technius.scalajs.mithril
+package com.tgf.pizza.scalajs.mithril
 
 import scala.scalajs.js
 import scala.scalajs.js.|
