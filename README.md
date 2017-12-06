@@ -5,19 +5,19 @@ This is an experimental library that provides facades for [Mithril](https://lhor
 ## Setup
 Add the following lines to `build.sbt`:
 ```scala
-libraryDependencies += "co.technius" %%% "scalajs-mithril" % "0.1.0"
+libraryDependencies += "com.tgf.pizza" %%% "scalajs-mithril" % "0.1.0"
 ```
 
 To use a snapshot version:
 ```scala
 resolvers += Resolver.sonatypeRepo("snapshots")
-libraryDependencies += "co.technius" %%% "scalajs-mithril" % "0.2.0-SNAPSHOT"
+libraryDependencies += "com.tgf.pizza" %%% "scalajs-mithril" % "0.2.0-SNAPSHOT"
 ```
 
 ## Example
 
 ```scala
-import co.technius.scalajs.mithril._
+import com.tgf.pizza.scalajs.mithril._
 
 import org.scalajs.dom
 import scala.scalajs.js
@@ -102,7 +102,7 @@ class MyComponent extends Component {
 Lastly, call `m.mount` with your controller:
 
 ```scala
-import co.technius.scalajs.mithril._
+import com.tgf.pizza.scalajs.mithril._
 import org.scalajs.dom
 import scala.scalajs.js
 
