@@ -1,6 +1,6 @@
 import scala.scalajs.js
 
-import co.technius.scalajs.mithril._
+import com.tgf.pizza.scalajs.mithril._
 
 object DataFetchComponent extends Component {
 

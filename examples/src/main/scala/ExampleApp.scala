@@ -2,7 +2,7 @@ import scala.scalajs.js
 import scala.scalajs.js.JSConverters._
 import org.scalajs.dom
 
-import co.technius.scalajs.mithril._
+import com.tgf.pizza.scalajs.mithril._
 
 object ExampleApp extends js.JSApp {
   def main(): Unit = {

@@ -2,7 +2,6 @@ package com.tgf.pizza.scalajs.mithril
 
 import org.scalajs.dom
 import scala.scalajs.js
-import scala.scalajs.js.|
 import scala.scalajs.js.annotation.JSName
 
 @js.native @JSName("m")
