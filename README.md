@@ -5,7 +5,7 @@ This is an experimental library that provides facades for [Mithril](https://lhor
 ## Setup
 Add the following lines to `build.sbt`:
 ```scala
-libraryDependencies += "com.tgf.pizza" %%% "scalajs-mithril" % "0.1.0"
+libraryDependencies += "com.tgf.pizza" %%% "scalajs-mithril" % "0.1.1"
 ```
 
 To use a snapshot version:
