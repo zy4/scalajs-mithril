@@ -1,6 +1,5 @@
 import scala.scalajs.js
 import scala.scalajs.js.Dynamic.{ literal => json }
-import org.scalajs.dom
 
 import com.tgf.pizza.scalajs.mithril._
 

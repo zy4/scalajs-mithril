@@ -2,7 +2,6 @@ package com.tgf.pizza.scalajs.mithril
 
 import org.scalajs.dom.XMLHttpRequest
 import scala.scalajs.js
-import scala.scalajs.js.annotation.ScalaJSDefined
 
 @js.native
 trait Deferred[T] extends js.Object {
@@ -42,10 +41,10 @@ object Promise {
   }
 }
 
-@ScalaJSDefined
 class XHROptions[T](
   var method: String,
   var url: String,
+  var dataType: js.UndefOr[String] = js.undefined,
   var user: js.UndefOr[String] = js.undefined,
   var password: js.UndefOr[String] = js.undefined,
   var data: js.UndefOr[js.Object] = js.undefined,

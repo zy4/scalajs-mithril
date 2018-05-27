@@ -1,8 +1,8 @@
 lazy val sharedSettings = Seq(
-  version := "0.1.1",
+  version := "0.1.2",
   organization := "com.tgf.pizza",
-  scalaVersion := "2.12.1",
-  crossScalaVersions := Seq("2.12.1", "2.11.11"),
+  scalaVersion := "2.12.6",
+  crossScalaVersions := Seq("2.12.6", "2.11.11"),
   scalacOptions ++= Seq(
     "-feature",
     "-deprecation",
@@ -14,10 +14,13 @@ lazy val sharedSettings = Seq(
 lazy val root = (project in file(".")).aggregate(core, examples)
 
 lazy val core =
-  Project("core", file("core"))
+  (project in file("core"))
     .settings(sharedSettings: _*)
     .settings(Publish.settings: _*)
     .settings(
+      scalacOptions ++= Seq("-P:scalajs:suppressExportDeprecations",
+                            "-P:scalajs:suppressMissingJSGlobalDeprecations",
+                            "-P:scalajs:sjsDefinedByDefault"),
       name := """scalajs-mithril""",
       libraryDependencies ++= Seq(
         "org.scala-js" %%% "scalajs-dom" % "0.9.3"
@@ -26,9 +29,12 @@ lazy val core =
     .enablePlugins(ScalaJSPlugin)
 
 lazy val examples =
-  Project("examples", file("examples"))
+  (project in file("examples"))
     .settings(sharedSettings: _*)
     .settings(
+      scalacOptions ++= Seq("-P:scalajs:suppressExportDeprecations",
+                            "-P:scalajs:suppressMissingJSGlobalDeprecations",
+                            "-P:scalajs:sjsDefinedByDefault"),
       name := """scalajs-mithril-examples""",
       libraryDependencies ++= Seq(
         "org.scala-js" %%% "scalajs-dom" % "0.9.3"

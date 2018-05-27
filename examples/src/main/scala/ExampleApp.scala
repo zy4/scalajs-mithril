@@ -4,8 +4,8 @@ import org.scalajs.dom
 
 import com.tgf.pizza.scalajs.mithril._
 
-object ExampleApp extends js.JSApp {
-  def main(): Unit = {
+object ExampleApp {
+  def main(args: Array[String]): Unit = {
     m.mount(dom.document.getElementById("app"), ShowcaseComponent)
   }
 }
