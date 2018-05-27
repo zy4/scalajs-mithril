@@ -1,7 +1,3 @@
-inThisBuild(
-  Seq(publishArtifact := false)
-)
-
 lazy val sharedSettings = Seq(
   organization := "com.tgf.pizza",
   scalaVersion := "2.12.6",
