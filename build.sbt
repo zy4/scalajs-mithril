@@ -1,5 +1,8 @@
+inThisBuild(
+  Seq(publishArtifact := false)
+)
+
 lazy val sharedSettings = Seq(
-  version := "0.1.2",
   organization := "com.tgf.pizza",
   scalaVersion := "2.12.6",
   crossScalaVersions := Seq("2.12.6", "2.11.11"),
@@ -8,7 +11,7 @@ lazy val sharedSettings = Seq(
     "-deprecation",
     "-Xlint",
     "-Xfatal-warnings"
-  )
+  ),
 )
 
 lazy val root = (project in file(".")).aggregate(core, examples)
@@ -16,7 +19,6 @@ lazy val root = (project in file(".")).aggregate(core, examples)
 lazy val core =
   (project in file("core"))
     .settings(sharedSettings: _*)
-    .settings(Publish.settings: _*)
     .settings(
       scalacOptions ++= Seq("-P:scalajs:suppressExportDeprecations",
                             "-P:scalajs:suppressMissingJSGlobalDeprecations",
