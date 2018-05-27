@@ -7,6 +7,6 @@ import scala.scalajs.js
 @js.native
 trait MithrilFactory extends js.Object {
 
-  def factory(el: dom.raw.Element): js.Object = js.native
+  def factory(el: dom.raw.Window): js.Object = js.native
 
 }
